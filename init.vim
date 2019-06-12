@@ -1,4 +1,4 @@
-source $VIMRUNTIME/mswin.vim
+"source $VIMRUNTIME/mswin.vim
 call plug#begin('~/.local/share/nvim/plugged')
 
 "状态栏
@@ -22,7 +22,8 @@ let g:python_host_prog = 'C:\Python27\python.exe'
 let g:python3_host_prog = 'C:\Python\Python37\python.exe'
 
 "共享剪切板
-set clipboard=unnamedplus
+set clipboard=unnamed
+set clipboard+=unnamedplus
 
 let g:deoplete#enable_at_startup = 1
 " theme
@@ -65,3 +66,5 @@ set autoindent
 map <F3> :NERDTreeMirror<CR>
 map <F3> :NERDTreeToggle<CR>
 
+"没有这个不能打开剪切板，不知道为啥
+set mouse=a
