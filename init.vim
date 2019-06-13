@@ -7,6 +7,10 @@ Plug 'vim-airline/vim-airline-themes'
 
 Plug 'liuchengxu/space-vim-theme'
 
+Plug 'neomake/neomake'
+Plug 'tracyone/neomake-multiprocess'
+
+Plug 'skywind3000/asyncrun.vim'
 "
 
 "Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -22,8 +26,7 @@ let g:python_host_prog = 'C:\Python27\python.exe'
 let g:python3_host_prog = 'C:\Python\Python37\python.exe'
 
 "共享剪切板
-set clipboard=unnamed
-set clipboard+=unnamedplus
+set clipboard^=unnamed,unnamedplus
 
 let g:deoplete#enable_at_startup = 1
 " theme
@@ -68,3 +71,5 @@ map <F3> :NERDTreeToggle<CR>
 
 "没有这个不能打开剪切板，不知道为啥
 set mouse=a
+"异步运行插件不中文乱码
+let g:asyncrun_encs = 'gbk'
