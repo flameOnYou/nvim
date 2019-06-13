@@ -11,6 +11,8 @@ Plug 'neomake/neomake'
 Plug 'tracyone/neomake-multiprocess'
 
 Plug 'skywind3000/asyncrun.vim'
+Plug 'vobornik/vim-mql4'
+Plug 'rupurt/vim-mql5'
 "
 
 "Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
