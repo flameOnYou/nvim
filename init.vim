@@ -19,7 +19,7 @@ Plug 'neoclide/coc.nvim', {'do': './install.cmd nightly'}
 call plug#end()
 
 let g:python_host_prog = 'C:\Python27\python.exe'
-let g:python3_host_prog = 'C:\Python\Python37\python.exe'
+let g:python3_host_prog = 'C:\Python37\python.exe'
 
 "共享剪切板
 set clipboard=unnamedplus
@@ -27,7 +27,7 @@ set clipboard=unnamedplus
 let g:deoplete#enable_at_startup = 1
 " theme
 colorscheme space_vim_theme
-
+set guifont=Sarasa\ Mono\ SC:h11
 "gvim内部编码
 set encoding=utf-8
 "当前编辑的文件编码
@@ -64,4 +64,10 @@ set autoindent
 "按F3即可显示或隐藏NerdTree区域了。
 map <F3> :NERDTreeMirror<CR>
 map <F3> :NERDTreeToggle<CR>
-
+" powerline symbols
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+"let g:airline_symbols.linenr = '☰'
+"let g:airline_symbols.maxlinenr = ''
