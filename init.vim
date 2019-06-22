@@ -79,6 +79,10 @@ set autoindent
 "按F3即可显示或隐藏NerdTree区域了。
 map <F3> :NERDTreeMirror<CR>
 map <F3> :NERDTreeToggle<CR>
+
+"全屏 
+map <F11> :call GuiWindowFullScreen(1)<CR>
+map <C-F11> :call GuiWindowFullScreen(0)<CR>
 " powerline symbols
 let g:airline_left_sep = ''
 let g:airline_left_alt_sep = ''
