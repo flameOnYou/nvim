@@ -1,4 +1,4 @@
-source $VIMRUNTIME/mswin.vim
+"source $VIMRUNTIME/mswin.vim
 call plug#begin('~/.local/share/nvim/plugged')
 
 "状态栏
@@ -7,6 +7,22 @@ Plug 'vim-airline/vim-airline-themes'
 
 Plug 'liuchengxu/space-vim-theme'
 
+Plug 'neomake/neomake'
+Plug 'tracyone/neomake-multiprocess'
+
+Plug 'skywind3000/asyncrun.vim'
+
+Plug 'vobornik/vim-mql4'
+Plug 'rupurt/vim-mql5'
+
+"vim中文帮助
+Plug 'yianwillis/vimcdoc'
+
+"tab切换插件
+Plug 'ap/vim-buftabline'
+
+"窗口选择 按-
+Plug 't9md/vim-choosewin'
 "
 
 "Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -22,12 +38,11 @@ let g:python_host_prog = 'C:\Python27\python.exe'
 let g:python3_host_prog = 'C:\Python37\python.exe'
 
 "共享剪切板
-set clipboard=unnamedplus
+set clipboard^=unnamed,unnamedplus
 
 let g:deoplete#enable_at_startup = 1
 " theme
 colorscheme space_vim_theme
-set guifont=Sarasa\ Mono\ SC:h11
 "gvim内部编码
 set encoding=utf-8
 "当前编辑的文件编码
@@ -71,3 +86,11 @@ let g:airline_right_sep = ''
 let g:airline_right_alt_sep = ''
 "let g:airline_symbols.linenr = '☰'
 "let g:airline_symbols.maxlinenr = ''
+"异步运行插件不中文乱码
+let g:asyncrun_encs = 'gbk'
+
+"全屏
+"map <F11> <Esc>:call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)<CR> 
+
+nmap  -  <Plug>(choosewin)
+let g:choosewin_overlay_enable = 1
