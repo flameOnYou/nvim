@@ -25,6 +25,9 @@ Plug 'ap/vim-buftabline'
 Plug 't9md/vim-choosewin'
 "
 
+"主题
+Plug 'yasukotelin/shirotelin'
+Plug 'vim-scripts/abbott.vim'
 "Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 "Plug 'deoplete-plugins/deoplete-jedi'
 
@@ -42,7 +45,9 @@ set clipboard^=unnamed,unnamedplus
 
 let g:deoplete#enable_at_startup = 1
 " theme
-colorscheme space_vim_theme
+colorscheme abbott
+set background=light
+"colorscheme vim-aurora
 "gvim内部编码
 set encoding=utf-8
 "当前编辑的文件编码
