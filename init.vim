@@ -5,11 +5,11 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
-Plug 'liuchengxu/space-vim-theme'
 
 Plug 'neomake/neomake'
 Plug 'tracyone/neomake-multiprocess'
 
+"异步插件
 Plug 'skywind3000/asyncrun.vim'
 
 Plug 'vobornik/vim-mql4'
@@ -23,11 +23,15 @@ Plug 'ap/vim-buftabline'
 
 "窗口选择 按-
 Plug 't9md/vim-choosewin'
-"
+
+"类方法信息
+Plug 'Yggdroot/LeaderF' ,{'do':'./install.bat'}
 
 "主题
 Plug 'yasukotelin/shirotelin'
 Plug 'vim-scripts/abbott.vim'
+Plug 'junegunn/seoul256.vim'
+Plug 'liuchengxu/space-vim-theme'
 "Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 "Plug 'deoplete-plugins/deoplete-jedi'
 
@@ -45,8 +49,8 @@ set clipboard^=unnamed,unnamedplus
 
 let g:deoplete#enable_at_startup = 1
 " theme
-colorscheme abbott
-set background=light
+colorscheme seoul256
+set background=dark
 "colorscheme vim-aurora
 "gvim内部编码
 set encoding=utf-8
