@@ -25,7 +25,7 @@ Plug 'ap/vim-buftabline'
 Plug 't9md/vim-choosewin'
 
 "类方法信息
-Plug 'Yggdroot/LeaderF' ,{'do':'./install.bat'}
+Plug 'Yggdroot/LeaderF' ,{'do':'./install.sh'}
 
 "主题
 Plug 'yasukotelin/shirotelin'
@@ -38,11 +38,10 @@ Plug 'liuchengxu/space-vim-theme'
 "树状管理文件夹
 Plug 'scrooloose/nerdtree'
 
-Plug 'neoclide/coc.nvim', {'do': './install.cmd nightly'}
 call plug#end()
 
-let g:python_host_prog = 'C:\Python27\python.exe'
-let g:python3_host_prog = 'C:\Python37\python.exe'
+let g:python_host_prog = '/usr/bin/python'
+let g:python3_host_prog = '/usr/local/python3'
 
 "共享剪切板
 set clipboard^=unnamed,unnamedplus
